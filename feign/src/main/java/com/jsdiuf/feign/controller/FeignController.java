@@ -24,7 +24,7 @@ public class FeignController {
     public String add() {
         String string = this.testFeignClient.add();
         System.out.println(string);
-        System.out.println(this.restTemplate.getForObject("http://service-a/test", String.class));
+        //System.out.println(this.restTemplate.getForObject("http://service-a/test", String.class));
         return string;
     }
 }

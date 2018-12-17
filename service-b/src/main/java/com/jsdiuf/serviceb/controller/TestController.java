@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     @GetMapping(value = "/test")
     public String add() {
-        System.out.println(123);
         return "from server b";
     }
 
