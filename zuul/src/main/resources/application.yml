@@ -1,0 +1,29 @@
+server:
+  port: 8050
+
+spring:
+  application:
+    name: service-zuul
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8081/eureka/
+
+zuul:
+  ignored-services: "*"
+  sensitive-headers:
+  prefix: /api #为zuul设置一个公共的前缀
+  routes:
+    service-a:
+      path: /service-a/**
+      serviceId: service-a
+    service-b:
+      path: /service-b/**
+      serviceId: service-b
+    zuul:
+      path: /my-feign/**
+      serviceId: my-feign
+
