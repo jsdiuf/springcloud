@@ -11,7 +11,7 @@ eureka:
     preferIpAddress: true
 ribbon:
   eureka:
-    enabled: true         # Ä¬ÈÏÎªtrue¡£Èç¹ûÉèÖÃÎªfalse£¬Ribbon½«²»»á´ÓEurekaÖĞ»ñµÃ·şÎñÁĞ±í£¬¶øÊÇÊ¹ÓÃ¾²Ì¬ÅäÖÃµÄ·şÎñÁĞ±í¡£¾²Ì¬·şÎñÁĞ±í¿ÉÊ¹ÓÃ£º<client>.ribbon.listOfServersÀ´Ö¸¶¨¡£²Î¿¼£ºhttp://projects.spring.io/spring-cloud/docs/1.0.3/spring-cloud.html#spring-cloud-ribbon-without-eureka
+    enabled: true         # é»˜è®¤ä¸ºtrueã€‚å¦‚æœè®¾ç½®ä¸ºfalseï¼ŒRibbonå°†ä¸ä¼šä»Eurekaä¸­è·å¾—æœåŠ¡åˆ—è¡¨ï¼Œè€Œæ˜¯ä½¿ç”¨é™æ€é…ç½®çš„æœåŠ¡åˆ—è¡¨ã€‚é™æ€æœåŠ¡åˆ—è¡¨å¯ä½¿ç”¨ï¼š<client>.ribbon.listOfServersæ¥æŒ‡å®šã€‚å‚è€ƒï¼šhttp://projects.spring.io/spring-cloud/docs/1.0.3/spring-cloud.html#spring-cloud-ribbon-without-eureka
 feign:
   hystrix:
-    enabled: true     #ÈÛ¶Ï»úÖÆ
+    enabled: true     #ç†”æ–­æœºåˆ¶
