@@ -15,3 +15,4 @@ ribbon:
 feign:
   hystrix:
     enabled: true     #熔断机制
+
